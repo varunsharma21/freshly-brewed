@@ -1,17 +1,70 @@
 .sidebar {
   height: 100vh;
-  width: 7%;
-  background-color: pink;
+  width: 5%;
+  background-color: black;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
 }
 
-.sidebar img {
+.profile-picture {
   height: 80%;
   width: 80%;
   border-radius: 50%;
   margin-left: 10%;
-  margin-top: 20%;
+}
+
+.first-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-list li {
+  margin-top: 30px;
+}
+
+.menu {
+  height: 20px;
+  width: 20px;
+}
+
+.second-list img {
+  height: 20px;
+  width: 20px;
+}
+
+.second-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-list li {
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 240px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.third-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third-list img {
+  height: 20px;
+  width: 20px;
+}
+
+.third-list li {
+  margin-top: 10px;
 }

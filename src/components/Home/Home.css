@@ -1,4 +1,11 @@
-.home {
+.home button {
+  background-color: black;
+  color: white;
+  margin-left: 44%;
+  width: 10%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .home h2 {

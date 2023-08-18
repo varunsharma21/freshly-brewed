@@ -3,6 +3,7 @@ import "./Home.css";
 import InstructorCards from "../InstructorCard/InstructorCards";
 import CategoryCards from "../CategoriesCard/CategoryCards";
 import LearningCard from "../LearningCard/LearningCard";
+import LearningCards from "../LearningCard/LearningCards";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <h2>Categories</h2>
       <CategoryCards />
       <h2>My Learnings</h2>
-      <LearningCard />
+      <LearningCards />
+      <button>View All</button>
     </div>
   );
 };

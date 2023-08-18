@@ -1,28 +1,28 @@
 import React from "react";
 import "./InstructorCard.css";
-import guitar from "./../../assets/Images/guitar-image.jpg";
+import star from "./../../assets/Images/star.png";
 import clock from "./../../assets/Images/clock.png";
 
-const InstructorCard = () => {
+const InstructorCard = (props) => {
   return (
     <div className="card">
       <img className="bookmark" src={clock} alt="teacher" />
-      <img className="background-image" src={guitar} />
+      <img className="background-image" src={props.backgroundImage} />
       <div className="instructor-info">
-        <img src={clock} alt="teacher" />
-        <p>John</p>
+        <img src={props.photo} alt="teacher" />
+        <p>{props.name}</p>
       </div>
-      <p className="course-title">Music Theory</p>
+      <p className="course-title">{props.title}</p>
       <div className="info">
         <p className="text-small">
           <img className="icons" src={clock} />
-          2h 30m
+          {props.duration}
         </p>
         <p className="text-small">
-          <img className="icons" src={clock} />
-          2h 30m
+          <img className="icons" src={star} />
+          {props.rating}/5
         </p>
-        <div className="text">Start</div>
+        <div className="text">{props.price}</div>
       </div>
     </div>
   );
