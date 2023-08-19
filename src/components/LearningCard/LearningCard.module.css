@@ -1,0 +1,80 @@
+.learning-card {
+  height: 20%;
+  width: 41.8%;
+  display: flex;
+  flex-direction: row;
+  background-color: #e9e6e6;
+  margin-top: 15px;
+  margin-right: 35px;
+  border-radius: 20px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.learning-card img {
+  height: 90%;
+  width: 30%;
+  margin-left: 5px;
+  padding: 5px 0 5px 0;
+  border-radius: 20px;
+}
+
+.bookmark-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 290px;
+}
+
+.bookmark-icon img {
+  width: 15px;
+  height: 15px;
+  margin-left: -1px;
+}
+
+.topic {
+  margin-top: -30px;
+}
+
+.learning-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+progress {
+  margin-left: 10px;
+  width: 310px;
+  height: 5px;
+  border-radius: 20px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgb(192, 189, 189);
+}
+
+progress::-webkit-progress-value {
+  background-color: #e9e6e6 !important;
+}
+
+.instructor-name {
+  padding-bottom: 10px;
+  font-size: small;
+}
+
+.percent-completed {
+  padding-top: 10px;
+  font-size: small;
+}

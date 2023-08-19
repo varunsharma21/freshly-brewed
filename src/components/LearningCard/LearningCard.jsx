@@ -1,18 +1,18 @@
 import React from "react";
-import "./LearningCard.css";
+import styles from "./LearningCard.module.css";
 import bookmark from "./../../assets/Images/bookmark.png";
 
 const LearningCard = (props) => {
   return (
-    <div className="learning-card">
+    <div className={styles["learning-card"]}>
       <img src={props.photo} />
 
-      <div className="learning-info">
-        <div className="bookmark-icon">
+      <div className={styles["learning-info"]}>
+        <div className={styles["bookmark-icon"]}>
           <img src={bookmark} alt="bookmark" />
         </div>
-        <p className="topic">{props.title}</p>
-        <p className="instructor-name">{props.name}</p>
+        <p className={styles.topic}>{props.title}</p>
+        <p className={styles["instructor-name"]}>{props.name}</p>
 
         <progress
           id="my-progress"
@@ -20,7 +20,9 @@ const LearningCard = (props) => {
           max="100"
         ></progress>
 
-        <p className="percent-completed">{props.percentCompleted}% Completed</p>
+        <p className={styles["percent-completed"]}>
+          {props.percentCompleted}% Completed
+        </p>
       </div>
     </div>
   );

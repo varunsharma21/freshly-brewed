@@ -1,10 +1,10 @@
 import React from "react";
-import "./CategoryCards.css";
+import styles from "./CategoryCards.module.css";
 import CategoryCard from "./CategoryCard";
 
 const CategoryCards = () => {
   return (
-    <div className="category-cards">
+    <div className={styles["category-cards"]}>
       {categoriesInfo.map((el) => (
         <CategoryCard
           category={el.category}

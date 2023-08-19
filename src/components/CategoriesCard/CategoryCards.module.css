@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.category-cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 1%;
+  font-family: "Montserrat", sans-serif;
+}

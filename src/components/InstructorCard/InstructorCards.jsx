@@ -1,10 +1,10 @@
 import React from "react";
 import InstructorCard from "./InstructorCard";
-import "./InstructorCards.css";
+import styles from "./InstructorCards.module.css";
 
 const InstructorCards = () => {
   return (
-    <div className="instructor-cards">
+    <div className={styles["instructor-cards"]}>
       {InstructorCardInfo.map((el) => (
         <InstructorCard
           name={el.name}

@@ -1,42 +1,39 @@
 import React from "react";
-import "./SideBar.css";
-import user from "./../../assets/Images/user.jpeg";
-import menu from "./../../assets/Images/menu.png";
-import verify from "./../../assets/Images/verify.png";
-import people from "./../../assets/Images/people.png";
-import settings from "./../../assets/Images/settings.png";
-import logout from "./../../assets/Images/logout.png";
-import notes from "./../../assets/Images/notes.png";
+import styles from "./SideBar.module.css";
 
 const SideBar = () => {
   return (
-    <div className="sidebar">
-      <ul className="first-list">
+    <div className={styles.sidebar}>
+      <ul className={styles["first-list"]}>
         <li>
-          <img className="profile-picture" src={user} alt="User" />
+          <img
+            className={styles["profile-picture"]}
+            src={require("./../../assets/Images/user.jpeg")}
+            alt="User"
+          />
         </li>
-        <li className="menu">
-          <img src={menu} alt="Menu" />
+        <li className={styles.menu}>
+          <img src={require("./../../assets/Images/menu.png")} alt="Menu" />
         </li>
       </ul>
-      <ul className="second-list">
+      <ul className={styles["second-list"]}>
         <li>
-          <img src={verify} />
+          <img src={require("./../../assets/Images/verify.png")} />
         </li>
         <li>
-          <img src={people} />
+          <img src={require("./../../assets/Images/people.png")} />
         </li>
         <li>
-          <img src={notes} />
+          <img src={require("./../../assets/Images/notes.png")} />
         </li>
       </ul>
       <hr />
-      <ul className="third-list">
+      <ul className={styles["third-list"]}>
         <li>
-          <img src={settings} />
+          <img src={require("./../../assets/Images/settings.png")} />
         </li>
         <li>
-          <img src={logout} />
+          <img src={require("./../../assets/Images/logout.png")} />
         </li>
       </ul>
     </div>

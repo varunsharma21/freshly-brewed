@@ -1,0 +1,95 @@
+.card {
+  margin-top: 15px;
+  margin-right: 25px;
+  height: 35%;
+  width: 20%;
+  background-color: #e9e6e6;
+  border-radius: 20px;
+  border: 0.5px solid #e9e6e6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.background-image {
+  height: 105px;
+  width: 95%;
+  margin: 3% 2.5% 0 2.5%;
+  border-radius: 20px;
+}
+
+.card p {
+  margin-top: 0;
+  margin-left: 5%;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.icons {
+  height: 15px;
+  width: 15px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.info p {
+  margin-right: 10px;
+}
+
+.text-small {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.text {
+  background-color: white;
+  padding: 2px 10px 2px 10px;
+  margin-left: 40px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.info img {
+  margin-right: 7px;
+}
+
+.instructor-info {
+  z-index: 1;
+  position: relative;
+  bottom: 20px;
+  padding: 1px 0 1px 1px;
+  left: 5%;
+  width: 55%;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.instructor-info img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.bookmark {
+  z-index: 1;
+  position: relative;
+  top: 10px;
+  left: 87%;
+  height: 20px;
+  width: 20px;
+}

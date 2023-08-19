@@ -1,0 +1,17 @@
+.home button {
+  background-color: black;
+  color: white;
+  margin-left: 44%;
+  width: 10%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home h3 {
+  margin-left: 7%;
+  padding: 1% 0 0 3%;
+  font-family: "Montserrat", sans-serif;
+}

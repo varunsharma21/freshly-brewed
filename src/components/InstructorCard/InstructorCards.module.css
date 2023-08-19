@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.instructor-cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}

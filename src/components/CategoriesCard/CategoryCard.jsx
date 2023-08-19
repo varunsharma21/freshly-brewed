@@ -1,11 +1,10 @@
 import React from "react";
-import clock from "./../../assets/Images/clock.png";
-import "./CategoryCard.css";
+import styles from "./CategoryCard.module.css";
 
 const CategoryCard = (props) => {
   if (props.selected === true) {
     return (
-      <div className="category-card selected">
+      <div className={styles["category-card-selected"]}>
         <img src={props.icon} />
         <p>{props.category}</p>
       </div>
@@ -13,7 +12,7 @@ const CategoryCard = (props) => {
   }
   if (props.selected === false) {
     return (
-      <div className="category-card">
+      <div className={styles["category-card"]}>
         <img src={props.icon} />
         <p>{props.category}</p>
       </div>

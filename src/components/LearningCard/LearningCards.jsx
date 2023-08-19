@@ -1,10 +1,10 @@
 import React from "react";
 import LearningCard from "./LearningCard";
-import "./LearningCards.css";
+import styles from "./LearningCards.module.css";
 
 const LearningCards = () => {
   return (
-    <div className="learning-cards">
+    <div className={styles["learning-cards"]}>
       {learningCardsInfo.map((el) => (
         <LearningCard
           title={el.title}
